@@ -5,7 +5,7 @@ Spawn = {
     InitCamera = function(self)
         TransitionToBlurred(500)
         DoScreenFadeOut(500)
-        cam = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", 600.1, 507.49, 644.86, 10.76, 0.00, 0.00, 100.00, false, 0)
+        cam = CreateCameraWithParams("DEFAULT_SCRIPTED_CAMERA", -90.79, -915.89, 236.88, -70.0, 0.00, 0.00, 100.0, false, 0)
         SetCamActiveWithInterp(cam, true, 900, true, true)
         RenderScriptCams(true, false, 1, true, true)
         DisplayRadar(false)
