@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { makeStyles } from '@mui/styles';
 
 import { login } from '../../actions/loginActions';
-import logo from '../../assets/imgs/logo_banner.png';
+import logo from '../../assets/imgs/logo.png';
 
 const useStyles = makeStyles((theme) => ({
 	wrapper: {
@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
 		width: '55%',
 		position: 'absolute',
 		top: 0,
-		bottom: 0,
+		// bottom: 0,
 		left: 0,
 		right: 0,
 		margin: 'auto',
@@ -76,17 +76,15 @@ const Splash = (props) => {
 
 	return (
 		<div className={classes.wrapper}>
-			<img className={classes.img} src={logo} />
 			<div className={classes.innerBody}>
+			{/* <img className={classes.img} src={logo} /> */}
 				<span className={classes.splashHeader}>
-					Welcome To <span className={classes.splashBranding}>Mythic RP</span>
+					Welcome To <img className={classes.img} src={logo} />
 				</span>
 				<span className={classes.splashTip}>
 					Press <span className={classes.splashTipHighlight}>ENTER</span>
-					{' / '}
-					<span className={classes.splashTipHighlight}>SPACE</span>
-					{' / '}
-					<span className={classes.splashTipHighlight}>LEFT MOUSE</span> To Continue
+					{' or '}
+					<span className={classes.splashTipHighlight}>SPACE</span> to continue
 				</span>
 			</div>
 		</div>
